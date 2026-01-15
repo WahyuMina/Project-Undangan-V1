@@ -1,0 +1,523 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --gold: #d4af37;
+  --glass: rgba(255, 255, 255, 0.12);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+.font-estetik {
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#opening-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/wedding.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: 1.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.display-1 {
+  background: linear-gradient(
+    to right,
+    #fff 20%,
+    var(--gold) 40%,
+    var(--gold) 60%,
+    #fff 80%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+  -webkit-animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.opening-box {
+  background: var(--glass);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  padding: 50px 30px;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.opening-box::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.divider-ornament {
+  width: 60%;
+  max-width: 200px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 0 auto;
+  position: relative;
+}
+
+.divider-ornament::after {
+  content: "◈";
+  position: absolute;
+  color: var(--gold);
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  padding: 0 15px;
+}
+
+.tracking-widest {
+  letter-spacing: 0.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+#input-nama {
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 0;
+  transition: 0.4s;
+  text-align: center;
+  width: 80%;
+}
+
+#input-nama:focus {
+  background: transparent;
+  border-bottom: 2px solid var(--gold);
+  box-shadow: none;
+}
+
+/* Tombol Mewah */
+.btn-hover-effect {
+  background: transparent;
+  border: 2px solid var(--gold) !important;
+  color: var(--gold) !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  padding: 12px 35px;
+  transition: 0.5s;
+}
+
+.btn-hover-effect:hover {
+  background-color: var(--gold) !important;
+  color: #000 !important;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.btn-premium {
+  border: none;
+  border-radius: 5px;
+  background: var(--glass);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 50%;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn-premium:hover {
+  background: white;
+}
+
+.fade-out {
+  transform: scale(1.2);
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.text-gold {
+  color: #d4af37;
+}
+
+.foto-frame {
+  width: 250px;
+  height: 250px;
+  border: 5px solid #fff;
+  outline: 2px solid #d4af37;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.foto-frame:hover {
+  transform: scale(1.05);
+}
+
+.foto-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-mempelai {
+  background-color: #fdfbf7;
+}
+.foto-kubah {
+  width: 280px;
+  height: 380px;
+  border: 2px solid var(--gold);
+  border-radius: 150px 150px 0 0;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.foto-kubah img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 140px 140px 0 0;
+  filter: grayscale(30%);
+  transition: 0.5s;
+}
+
+.foto-kubah:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.border-gold {
+  border-color: var(--gold) !important;
+}
+
+.card-acara {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  transition: 0.4s;
+}
+
+.card-acara:hover {
+  transform: translateY(-10px);
+  border-color: var(--gold);
+}
+
+.countdown-item {
+  min-width: 80px;
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.btn-outline-gold {
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 50px;
+}
+
+.btn-outline-gold:hover {
+  background: var(--gold);
+  color: #000;
+}
+
+.galeri-item {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+}
+
+.galeri-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), filter 0.3s ease;
+  filter: grayscale(20%) brightness(0.8);
+}
+
+.galeri-item:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%) brightness(1.1);
+}
+
+.card-guestbook {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.custom-input-guest {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border-radius: 10px;
+}
+
+.custom-input-guest:focus {
+  border-color: var(--gold) !important;
+  box-shadow: none;
+}
+
+.ucapan-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid var(--gold);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 0 10px 10px 0;
+}
+
+#music-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  background: var(--gold);
+  color: #000;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+  bottom: 105px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.fa-spin-slow {
+  animation: fa-spin 3s infinite linear;
+}
+
+.music-paused {
+  animation-play-state: paused !important;
+}
+
+.mobile-nav {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 450px;
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 20px;
+  z-index: 10000;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.mobile-nav.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  flex: 1;
+}
+
+.nav-item i {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.nav-item span {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-item:hover {
+  color: #d4af37;
+  /*Warnaemassaathover*/
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+}
+footer {
+  padding-bottom: 120px !important;
+}
+
+footer .text-gold {
+  color: var(--gold);
+}
+
+footer h1 {
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+  footer {
+    padding-bottom: 100px !important;
+  }
+}
+
+.header-waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+}
+
+/* Animasi Pergerakan */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+.leaf-container {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.leaf {
+  position: absolute;
+  font-size: 24px;
+  animation: fall 10s linear infinite, sway 3s ease-in-out infinite alternate;
+}
+
+/* Atur posisi dan delay tiap daun secara acak */
+.leaf:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+.leaf:nth-child(2) {
+  left: 30%;
+  animation-delay: 2s;
+}
+.leaf:nth-child(3) {
+  left: 50%;
+  animation-delay: 4s;
+}
+.leaf:nth-child(4) {
+  left: 70%;
+  animation-delay: 6s;
+}
+.leaf:nth-child(5) {
+  left: 90%;
+  animation-delay: 8s;
+}
+
+/* Animasi Jatuh */
+@keyframes fall {
+  0% {
+    top: -50px;
+    opacity: 1;
+  }
+  100% {
+    top: 100vh;
+    opacity: 0;
+  }
+}
+
+/* Animasi Bergoyang */
+@keyframes sway {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(50px) rotate(90deg);
+  }
+}

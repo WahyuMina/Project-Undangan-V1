@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Wedding of Romeo & Juliet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css"
+    />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23d4af37' d='M256 0c141.4 0 256 114.6 256 256S397.4 512 256 512 0 397.4 0 256 114.6 0 256 0zm0 448c106 0 192-86 192-192S362 64 256 64 64 150 64 256s86 192 192 192zm-48-288c0-26.5 21.5-48 48-48s48 21.5 48 48-21.5 48-48 48-48-21.5-48-48z'/></svg>">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="bg-light">
+        <div class="header-waves">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(212, 175, 55, 0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(212, 175, 55, 0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(212, 175, 55, 0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#111" />
+        </g>
+    </svg>
+</div>
+    <section
+      id="opening-page"
+      class="d-flex align-items-center justify-content-center"
+    >
+      <div class="particles">
+        <span class="dot"></span><span class="dot"></span
+        ><span class="dot"></span> <span class="dot"></span
+        ><span class="dot"></span><span class="dot"></span>
+      </div>
+
+      <div class="opening-box">
+        <div class="flower-icon mb-3">
+          <i class="fas fa-seedling text-white-50"></i>
+        </div>
+
+        <h4 class="text-uppercase tracking-widest text-white-50 mb-4">
+          The Wedding of
+        </h4>
+        <h1 class="display-1 font-estetik mb-4">Romeo & Juliet</h1>
+
+        <div id="input-container" class="mt-5">
+          <p class="mb-4 text-white-50 italic">
+            Khusus untuk tamu spesial kami,
+          </p>
+          <div class="input-wrapper mx-auto mb-4">
+            <input
+              type="text"
+              id="input-nama"
+              class="custom-input"
+              placeholder="Masukkan Nama Anda..."
+              autocomplete="off"
+            />
+          </div>
+          <button class="btn-premium" onclick="simpanDanBuka()">
+            <span>BUKA UNDANGAN</span>
+          </button>
+        </div>
+
+        <div id="welcome-message" class="d-none text-center">
+          <p class="lead mb-1 text-white-50">Selamat Datang</p>
+          <h2
+            id="display-nama"
+            class="display-4 fw-bold font-estetik my-3 text-white"
+          ></h2>
+          <div
+            class="loading-bar mx-auto"
+            style="width: 100px; height: 2px; background: var(--gold)"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <id id="home">
+        <section id="mempelai" class="py-5 text-white" style="background: #111; border-top: 1px solid rgba(212, 175, 55, 0.2);">
+          <div class="container text-center py-5">
+            <h3 class="font-estetik mb-4" style="color: var(--gold); font-size: 2.2rem;">
+              Assalamu’alaikum Wr. Wb.
+            </h3>
+
+        <div class="animate__animated animate__fadeInUp">
+            <p class="lh-lg px-3 mx-auto italic mb-4" style="max-width: 800px; opacity: 0.8; font-style: italic; font-size: 0.95rem;">
+                "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+            </p>
+            <p style="color: var(--gold); font-weight: bold; margin-bottom: 40px;">(QS. Ar-Rum: 21)</p>
+        </div>
+
+        <div class="divider-ornament mb-5"></div>
+        
+        <p class="lh-lg px-3 mx-auto mb-5" style="max-width: 700px; opacity: 0.9">
+          Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri serta memberikan doa restu pada hari bahagia kami:
+        </p>
+      </div>
+    </section>
+  </id>
+
+      <section class="section-mempelai py-5" style="background: #000">
+        <div class="container py-5">
+          <div class="row text-center align-items-center">
+            <div class="col-lg-5 mb-5">
+              <div class="foto-kubah mx-auto mb-4">
+                <img src="assets/Romeo-Photo.jpg" alt="Mempelai Pria" />
+              </div>
+              <h2 class="font-estetik display-4" style="color: var(--gold)">
+                Romeo Montague
+              </h2>
+              <p class="text-white-50 mb-0">Putra Kedua dari:</p>
+              <p class="text-white">Bapak Montague & Ibu Montague</p>
+            </div>
+
+            <div class="col-lg-2 mb-5">
+              <h1
+                class="font-estetik display-1"
+                style="color: var(--gold); opacity: 0.5"
+              >
+                &
+              </h1>
+            </div>
+
+            <div class="col-lg-5 mb-5">
+              <div class="foto-kubah mx-auto mb-4">
+                <img src="assets/Julie-Photo.jpg" alt="Mempelai Wanita" />
+              </div>
+              <h2 class="font-estetik display-4" style="color: var(--gold)">
+                Juliet Capulet
+              </h2>
+              <p class="text-white-50 mb-0">Putri Pertama dari:</p>
+              <p class="text-white">Bapak Capulet & Ibu Capulet</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="acara" class="py-5 text-white" style="background: #111">
+        <div class="container py-5 text-center">
+          <h2 class="font-estetik mb-4" style="color: var(--gold)">
+            Menghitung Hari
+          </h2>
+          <div id="countdown" class="d-flex justify-content-center gap-3 mb-5">
+            <div class="countdown-item p-3 border border-gold rounded">
+              <h3 id="days" class="mb-0">00</h3>
+              <small>Hari</small>
+            </div>
+            <div class="countdown-item p-3 border border-gold rounded">
+              <h3 id="hours" class="mb-0">00</h3>
+              <small>Jam</small>
+            </div>
+            <div class="countdown-item p-3 border border-gold rounded">
+              <h3 id="minutes" class="mb-0">00</h3>
+              <small>Menit</small>
+            </div>
+            <div class="countdown-item p-3 border border-gold rounded">
+              <h3 id="seconds" class="mb-0">00</h3>
+              <small>Detik</small>
+            </div>
+          </div>
+
+          <div class="row justify-content-center g-4">
+            <div class="col-md-5">
+              <div class="card-acara p-4 shadow">
+                <i
+                  class="fas fa-ring mb-3 display-4"
+                  style="color: var(--gold)"
+                ></i>
+                <h3 class="font-estetik" style="color: var(--gold)">
+                  Akad Nikah
+                </h3>
+                <p>Minggu, 19 Febuari 2026</p>
+                <a href="#" class="btn btn-outline-gold mt-2">Lihat Lokasi</a>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="card-acara p-4 shadow">
+                <i
+                  class="fas fa-utensils mb-3 display-4"
+                  style="color: var(--gold)"
+                ></i>
+                <h3 class="font-estetik" style="color: var(--gold)">Resepsi</h3>
+                <p>Minggu, 20 Febuari 2026</p>
+                <a href="#" class="btn btn-outline-gold mt-2">Lihat Lokasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeri" class="py-5" style="background: #000">
+        <div class="container py-5 text-center">
+          <h2 class="font-estetik display-4 mb-5" style="color: var(--gold)">
+            Galeri Kebahagiaan
+          </h2>
+          <div class="row g-3 justify-content-center">
+            <div class="col-md-4 col-6">
+              <a href="assets/Romeo-Julie.png" class="galeri-item"
+                ><img src="assets/Romeo-Julie.png" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-4 col-6">
+              <a href="assets/Romeo-Julie.png" class="galeri-item"
+                ><img src="assets/Romeo-Julie.png" class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-4 col-6">
+              <a href="assets/Romeo-Julie.png" class="galeri-item"
+                ><img src="assets/Romeo-Julie.png" class="img-fluid"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="guestbook" class="py-5" style="background: #111">
+        <div class="container py-5 text-center">
+          <h2 class="font-estetik display-4 mb-5" style="color: var(--gold)">
+            Buku Tamu
+          </h2>
+          <div class="row justify-content-center">
+            <div class="col-md-7 text-start">
+              <div class="card-guestbook p-4">
+                <form id="ucapan-form">
+                  <div class="mb-3">
+                    <label class="text-white-50 small mb-2">Nama Anda</label>
+                    <input
+                      type="text"
+                      id="nama-tamu-form"
+                      name="NAME"
+                      class="form-control custom-input-guest"
+                      readonly
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="text-white-50 small mb-2"
+                      >Konfirmasi Kehadiran</label
+                    >
+                    <select
+                      name="KEHADIRAN"
+                      id="kehadiran"
+                      class="form-select custom-input-guest"
+                    >
+                      <option value="Hadir">Hadir</option>
+                      <option value="Tidak Hadir">Tidak Hadir</option>
+                      <option value="Masih Ragu">Masih Ragu</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="text-white-50 small mb-2">Ucapan & Doa</label>
+                    <textarea
+                    name="PESAN"
+                      id="pesan"
+                      class="form-control custom-input-guest"
+                      rows="4"
+                      placeholder="Tulis ucapan manis Anda di sini..."
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn-premium w-100 py-2">
+                    Kirim Ucapan
+                  </button>
+
+                </form>
+              </div>
+             <div class="mt-4"> 
+    <h5 class="text-white mb-4 font-estetik" style="color: var(--gold);">Doa & Ucapan Tamu</h5>
+    
+    <div id="daftar-ucapan" style="max-height: 500px; overflow-y: auto; padding-right: 10px;">
+        <div class="ucapan-item mb-3 p-3 rounded" style="background: rgba(255,255,255,0.05); border-left: 3px solid var(--gold);">
+            <h6 style="color: var(--gold);" class="mb-1">HaniBoy <small class="text-white-50"> - Hadir</small></h6>
+            <p class="text-white small mb-0">Selamat menempuh hidup baru untuk Romeo & Juliet! Semoga samawa selalu.</p>
+        </div>
+        </div>
+</div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="py-5 text-center text-white"
+        style="background: #000; border-top: 1px solid rgba(212, 175, 55, 0.2)"
+      >
+        <div class="container py-4">
+          <div class="mb-4">
+            <i class="fas fa-heart text-gold mb-3" style="font-size: 2rem"></i>
+          </div>
+          <h2
+            class="font-estetik mb-4"
+            style="color: var(--gold); font-size: 3rem"
+          >
+            Terima Kasih
+          </h2>
+          <p
+            class="mb-5 opacity-75 lh-lg px-3 mx-auto"
+            style="max-width: 600px"
+          >
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+            Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada
+            kedua mempelai.
+          </p>
+
+          <p class="mb-2 text-white-50 small">Kami yang berbahagia,</p>
+          <h1 class="display-4 font-estetik mb-5" style="color: var(--gold)">
+            Romeo & Juliet
+          </h1>
+
+          <div class="pt-3 border-top border-secondary opacity-50 ">
+            <p class="small mb-0 ">Created with ❤️ by Haniboy & WahyuMina</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div id="music-container">
+      <button
+        id="music-btn"
+        class="rounded-circle shadow-lg"
+        onclick="toggleMusic()"
+      >
+        <i class="fas fa-compact-disc fa-spin-slow" id="music-icon"></i>
+      </button>
+      <audio id="wedding-audio" loop>
+        <source
+          src="assets/Merry Go Round of Life - Howl's Moving Castle.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+    </div>
+
+<div class="leaf-container">
+    <div class="leaf">🍃</div>
+    <div class="leaf">🍂</div>
+    <div class="leaf">🍃</div>
+    <div class="leaf">🍂</div>
+    <div class="leaf">🍃</div>
+</div>
+
+    <nav class="mobile-nav">
+      <a href="#home" class="nav-item"
+        ><i class="fas fa-home"></i><span>Home</span></a
+      >
+      <a href="#acara" class="nav-item"
+        ><i class="fas fa-calendar-alt"></i><span>Acara</span></a
+      >
+      <a href="#galeri" class="nav-item"
+        ><i class="fas fa-images"></i><span>Galeri</span></a
+      >
+      <a href="#guestbook" class="nav-item"
+        ><i class="fas fa-comments"></i><span>Ucapan</span></a
+      >
+    </nav>
+    <div class="header-waves">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" style="transform: rotate(180deg);">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(212, 175, 55, 0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(212, 175, 55, 0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(212, 175, 55, 0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#111" />
+        </g>
+    </svg>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+    <script>
+      baguetteBox.run(".row");
+    </script>
+  </body>
+</html>
