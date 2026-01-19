@@ -1,19 +1,39 @@
-# Project Undangan V1 Prototype
+# Aplikasi Undangan Digital - Prototype V1
 
 <p align="center">
-  <img src="assets/image.png" alt="Pocket Mirror Logo" width="300">
+<img src="assets/image.png">
 </p>
 
-Project Undangan adalah sebuah surat undangan dibuat melalui Website agar pengguna atau orang yang mengikuti pernikahan bisa langsung mengetahui waktu dan lokasi acara pernikahan. Project ini memiliki tampilan responsive semua device termasuk smartphone yang akan digunakan oleh pengguna, sehingga pengguna akan merasa nyaman melihat tampilan layout dari website tersebut.
+Aplikasi undangan pernikahan digital berbasis web yang dirancang untuk memberikan informasi jadwal dan lokasi acara secara interaktif dan efisien kepada tamu undangan.
 
-## Cara memasang folder project
+## Fitur Utama
 
-1. Unduh Zip.
-2. Extract dan letakkan folder dimana saja.
-3. lalu Live kan Projectnya~
+- **Desain Responsif:** Tampilan optimal di berbagai perangkat (Smartphone, Tablet, dan Desktop).
+- **Integrasi Lokasi:** Memudahkan tamu menemukan lokasi acara melalui peta digital.
+- **User Experience (UX) Modern:** Navigasi yang halus dan tata letak yang bersih.
+- **Performa Ringan:** Optimasi aset untuk waktu pemuatan (loading) yang cepat.
 
-## Bahasa yang digunakan
+## Teknologi yang Digunakan
 
-1. PHP (Bootstrap)
-2. CSS
-3. JS (Jquery)
+- **Bahasa Pemrograman:** HTML5, CSS3, JavaScript (ES6+)
+- **Framework & Library:**
+  - [Bootstrap 5](https://getbootstrap.com/) - Untuk kerangka UI dan sistem grid responsif.
+  - [jQuery](https://jquery.com/) - Untuk manipulasi DOM dan interaksi dinamis.
+- **Peralatan:** VS Code, Live Server.
+
+## 📦 Instalasi & Penggunaan
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek di lingkungan lokal Anda:
+
+1. **Clone repositori:**
+   ```bash
+   git clone https://github.com/WahyuMina/Project-Undangan-V1.git
+   (https://github.com/WahyuMina/Project-Undangan-V1.git)
+   ```
+2. **Masuk ke direktori Proyek**
+   ```bash
+   cd Project-Undangan-V1
+   ```
+3. **Jalankan Aplikasi**
+   - Buka file "index.html" langsung di browser anda
+   - Atau gunakan Live server Di VS Code untuk pengalaman penggunaan yang lebih baik.
